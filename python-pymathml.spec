@@ -1,6 +1,6 @@
 %define oname   pymathml
 %define version 0.3
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary:	Python MathML renderer
 Name:		python-pymathml
@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Sciences/Mathematics
-URL:		http://pymathml.sf.net/
+URL:		http://pymathml.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/%{oname}/%{oname}-%{version}.tar.bz2
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	python-devel
@@ -16,8 +16,8 @@ Requires:	python-libxml2
 # rendering backends
 Requires:	libnxplot-python
 Requires:	pygtk2.0
-
-Obsoletes:      pymathml
+Provides:	pymathml = %{version}-%{release}
+Obsoletes:      pymathml < %{version}
 
 %description
 The goal of %{oname} is to create a system-independent MathML
@@ -42,5 +42,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS NEWS PKG-INFO README
 %py_puresitedir/*
-
-
