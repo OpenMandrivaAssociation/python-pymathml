@@ -10,6 +10,7 @@ License:	GPL
 Group:		Sciences/Mathematics
 URL:		http://pymathml.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/%{oname}/%{oname}-%{version}.tar.bz2
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	python-devel
 Requires:	python-libxml2
 # rendering backends
