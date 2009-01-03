@@ -1,6 +1,6 @@
 %define oname   pymathml
 %define version 0.3
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary:	Python MathML renderer
 Name:		python-pymathml
