@@ -4,7 +4,7 @@
 Summary:	Python MathML renderer
 Name:		python-pymathml
 Version:	0.3
-Release:	8
+Release:	9
 License:	GPL
 Group:		Sciences/Mathematics
 URL:		http://pymathml.sourceforge.net/
