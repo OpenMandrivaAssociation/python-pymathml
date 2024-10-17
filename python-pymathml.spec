@@ -7,7 +7,7 @@ Version:	0.3
 Release:	9
 License:	GPL
 Group:		Sciences/Mathematics
-URL:		http://pymathml.sourceforge.net/
+URL:		https://pymathml.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/%{oname}/%{oname}-%{version}.tar.bz2
 BuildRequires:	python-devel
 Requires:	python-libxml2
